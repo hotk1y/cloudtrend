@@ -1,0 +1,61 @@
+.postsBlock {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.top {
+   display: flex;
+}
+.img {
+   flex: 0 1 90%;
+   width: 90%;
+   height: 300px;
+   & img {
+      object-fit: cover;
+   }
+}
+.date {
+   font-size: 12px;
+   transform: rotate(270deg);
+   margin: auto;
+}
+.bottom {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.title {
+   flex: 0 1 90%;
+   font-size: 24px;
+}
+.desc {
+   flex: 0 1 90%;
+   font-weight: 300;
+   color: gray;
+}
+.linkPost {
+   display: block;
+   position: relative;
+   text-transform: uppercase;
+   text-decoration: underline;
+   padding: 10px;
+   transition: all 0.3s ease 0s;
+   &::before {
+      content: "";
+      position: absolute;
+      width: 12%;
+      height: 2px;
+      bottom: 0px;
+      left: 10px;
+      background-color: var(--textSoft);
+      transition: all 0.3s ease 0s;
+   }
+   @media (any-hover: hover) {
+      &:hover {
+         &::before {
+            background-color: var(--btn);
+         }
+         color: var(--btn);
+      }
+   }
+}

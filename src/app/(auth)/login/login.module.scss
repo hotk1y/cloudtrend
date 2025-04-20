@@ -1,0 +1,22 @@
+.login {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.wrapper {
+   background-color: var(--bgSoft);
+   width: 500px;
+   padding: 50px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 30px;
+   border-radius: 5px;
+}
+.github {
+   width: 100%;
+   padding: 20px;
+   cursor: pointer;
+   color: var(--bgSoft);
+   background-color: var(--textSoft);
+}

@@ -1,0 +1,7 @@
+.img {
+   flex: 0 1 50%;
+   position: relative;
+   & img {
+      object-fit: contain;
+   }
+}

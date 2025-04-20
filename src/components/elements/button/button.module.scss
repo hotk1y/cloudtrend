@@ -1,0 +1,20 @@
+.button {
+   padding: 20px;
+   min-width: 120px;
+   cursor: pointer;
+   border: none;
+   border-radius: 5px;
+   background-color: var(--btn);
+   color: var(--text);
+   font-weight: bold;
+   transition: all 0.3s ease 0s;
+   @media (any-hover: hover) {
+      &:hover {
+         background-color: var(--bgSoft);
+         color: var(--text);
+         &:first-child {
+            background-color: var(--bgSoft);
+         }
+      }
+   }
+}

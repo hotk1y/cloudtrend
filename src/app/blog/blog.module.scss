@@ -1,0 +1,19 @@
+.blogPage {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+.postsPage {
+   flex: 0 1 30%;
+   width: 30%;
+}
+@media (max-width: 1000px) {
+   .postsPage {
+      width: 45%;
+   }
+}
+@media (max-width: 767.98px) {
+   .postsPage {
+      width: 100%;
+   }
+}

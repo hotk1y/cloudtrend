@@ -1,0 +1,43 @@
+.links {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   text-transform: uppercase;
+}
+.logout {
+   padding: 10px;
+   font-weight: bold;
+   cursor: pointer;
+   background-color: var(--textSoft);
+   color: var(--bg);
+}
+.menuButton,
+.mobileLinks {
+   display: none;
+}
+@media (max-width: 767.98px) {
+   .links {
+      display: none;
+   }
+   .menuButton {
+      display: block;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      transition: all 0.3s ease 0s;
+   }
+   .mobileLinks {
+      position: absolute;
+      width: 50%;
+      height: calc(100vh - 100px);
+      top: 100px;
+      right: 0;
+      background-color: var(--bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #794f45;
+   }
+}
